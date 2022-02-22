@@ -96,6 +96,7 @@ export const ExtendContainer = styled.ul`
     height: 100%;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid gray;
     text-align: center;
 `
 export const ExtendItem = styled.li`
@@ -104,3 +105,7 @@ export const ExtendItem = styled.li`
     margin-top: 1rem;
 `
 
+export const Toggle = styled.div`
+    display: flex;
+    align-items: center;
+`

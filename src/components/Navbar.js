@@ -11,13 +11,14 @@ import {
     HamLogo,
     NavExtend,
     ExtendContainer,
-    ExtendItem
+    ExtendItem,
+    Toggle
 } from '../styles/Navbar.css'
 //icons
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { DiJavascript1 } from 'react-icons/di'
 import { AiOutlineMail, AiOutlineGithub, AiOutlineInstagram } from 'react-icons/ai'
-
+import { MdInvertColors } from 'react-icons/md'
 //render
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -59,9 +60,12 @@ function Navbar() {
                         <NavLink href=''><AiOutlineInstagram /></NavLink>
                         <NavLink href=''><AiOutlineMail /></NavLink>
                     </Icons>         
-                    <div className="form-check form-switch">
-                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    </div>
+                    <Toggle>                    
+                        <MdInvertColors style={{marginRight: "0.5rem"}} />
+                        <div className="form-check form-switch">
+                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        </div>
+                    </Toggle>
                 </ExtendContainer>
             </NavExtend>}
         </Nav >   
