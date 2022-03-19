@@ -12,60 +12,62 @@ import {
     NavExtend,
     ExtendContainer,
     ExtendItem,
-    Toggle
+    Toggle,
+    Anchor
 } from '../styles/Navbar.css'
 //icons
+import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { DiJavascript1 } from 'react-icons/di'
 import { AiOutlineMail, AiOutlineGithub, AiOutlineInstagram } from 'react-icons/ai'
 import { MdInvertColors } from 'react-icons/md'
+import { useSelector, useDispatch } from 'react-redux'
+import { darkMode, lightMode } from '../reducer/theme'
 //render
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
-
+    const dispatch = useDispatch()
+    const theme = useSelector((state) => state.theme.value)
+    console.log(theme);
     return (
-        <Nav height={isOpen}>
+        <Nav height={isOpen} color={theme.color} bgc={theme.bgc}>
             <NavbarWrap>
                 <NavLeft>
-                    <NavLink href=''>HOME</NavLink>
-                    <NavLink href=''>ABOUT</NavLink>
-                    <NavLink href=''>PROJECT</NavLink>
-                    <NavLink href=''>CONTACT</NavLink>
+                    <NavLink color={theme.color} to="/">HOME</NavLink>
+                    <NavLink color={theme.color} to="/about">ABOUT</NavLink>                    
+                    <NavLink color={theme.color} to="/project">PROJECT</NavLink>
+                    <NavLink color={theme.color} to="/note">NOTE</NavLink>
                 </NavLeft>
-                <Ham onClick={() => setIsOpen(!isOpen)}>
+                <Ham color={theme.color} onClick={() => setIsOpen(!isOpen)}>
                     <HamButton><GiHamburgerMenu /></HamButton>
                 </Ham>
                 <NavRight>
                     <Icons >
-                        <NavLink href=''><AiOutlineGithub /></NavLink>
-                        <NavLink href=''><AiOutlineInstagram /></NavLink>
-                        <NavLink href=''><AiOutlineMail /></NavLink>
+                        <Anchor color={theme.color}  href=''><AiOutlineGithub /></Anchor>
+                        <Anchor color={theme.color} href=''><AiOutlineInstagram /></Anchor>
+                        <Anchor color={theme.color} href=''><AiOutlineMail /></Anchor>
+                        <span style={{marginLeft: "1rem"}}>{theme.bgc === 'white' ? <MdOutlineLightMode onClick={() => dispatch(darkMode())} /> : <MdOutlineDarkMode  onClick={() => dispatch(lightMode())} />}</span>
                     </Icons>         
-                    <div className="form-check form-switch">
-                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    </div>
                 </NavRight>
                 <HamLogo>
-                    <NavLink href=''><DiJavascript1 /></NavLink>
+                    <NavLink color={theme.color} to="/"><DiJavascript1 /></NavLink>
                 </HamLogo>
             </NavbarWrap>
             {isOpen && <NavExtend>
                 <ExtendContainer>
-                    <ExtendItem><NavLink href=''>HOME</NavLink></ExtendItem>
-                    <ExtendItem><NavLink href=''>ABOUT</NavLink></ExtendItem>
-                    <ExtendItem><NavLink href=''>PROJECT</NavLink></ExtendItem>
-                    <ExtendItem><NavLink href=''>CONTACT</NavLink></ExtendItem>
-                    <Icons >
-                        <NavLink href=''><AiOutlineGithub /></NavLink>
-                        <NavLink href=''><AiOutlineInstagram /></NavLink>
-                        <NavLink href=''><AiOutlineMail /></NavLink>
-                    </Icons>         
-                    <Toggle>                    
-                        <MdInvertColors style={{marginRight: "0.5rem"}} />
-                        <div className="form-check form-switch">
-                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        </div>
+                    <Toggle>  
+                        <div>{theme.bgc === 'white' ? <MdOutlineLightMode onClick={() => dispatch(darkMode())} /> : <MdOutlineDarkMode  onClick={() => dispatch(lightMode())} />}</div>                  
+                        
                     </Toggle>
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/">HOME</NavLink></ExtendItem>
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/about">ABOUT</NavLink></ExtendItem>                    
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/project">PROJECT</NavLink></ExtendItem> 
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/note">NOTE</NavLink></ExtendItem>
+                    <Icons >
+                        <Anchor color={theme.color}  href=''><AiOutlineGithub /></Anchor>
+                        <Anchor color={theme.color} href=''><AiOutlineInstagram /></Anchor>
+                        <Anchor color={theme.color} href=''><AiOutlineMail /></Anchor>
+                    </Icons>         
                 </ExtendContainer>
             </NavExtend>}
         </Nav >   
