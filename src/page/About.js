@@ -16,12 +16,12 @@ function About() {
   return (
     <Container>
       <Profile />
+      <Text style={{marginTop: "1rem"}}><b>"每個人起跑點不同,重點在於是否比昨日的自己更進步"</b></Text>
       <Title><BsReverseLayoutTextWindowReverse /> BIO</Title>
       <Text>於2017/9 進入景文科技大學就讀,大一參加教育優先區擔任小組長.</Text>
       <Text>大二時由於課程需接觸Linux作業系統,期末時報名紅帽系統管理員認證.接連在2019/01考取Rhcsa、2019/07考取Rhce.</Text>
       <Text>大四上發現網頁蠻有趣,於是在課餘時慢慢從HTML開始在Youtube摸索.</Text>
       <Text>在服兵役的過程中,更確定了想往前端走的志向,於退伍休息幾日後,便開始嘗試Demo一些作品.</Text>
-      
       <Title><GrCertificate /> CERTIFICATION</Title>
       <Certify>
         <ListItem><Photo src={rhcsa} alt="Rhcsa" /></ListItem>

@@ -69,8 +69,7 @@ export const Icons = styled.div`
 `
 export const Ham = styled.div`
     flex: 60%;
-    line-height: 65px;
-    color: ${({color}) => color};
+    line-height: 65px;    
     @media screen and (min-width: 750px){
         display: none;
     }
@@ -82,6 +81,11 @@ export const HamButton = styled.button`
     margin-left: 2rem;
     background: none;
     font-size: 1.2rem;
+    color: ${({color}) => color==="grey"? "blue" : "lightblue"};
+    transition: 0.3s;
+    &:hover {
+        color: grey;
+    }
     &:active {
         color: lightgray;
     }

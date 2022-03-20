@@ -18,7 +18,7 @@ function Profile() {
       <Wrapper>
         <Avatar src={avatar} />
         <Intro>
-          <li><MdOutlineDriveFileRenameOutline /> Dennis ZHeng</li>
+          <li><MdOutlineDriveFileRenameOutline /> 鄭燕中 Dennis Zheng</li>
           <li><IoSchoolOutline /> 景文科技大學 資訊工程系 <span>2017/09 - 2021/06</span></li>
           <li><MdMilitaryTech /> 2021/9/28 - 2022/01/18 </li>
           <li><MdOutlineEmail /> ococo09000@gmail.com</li>

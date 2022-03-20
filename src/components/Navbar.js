@@ -17,9 +17,8 @@ import {
 } from '../styles/Navbar.css'
 //icons
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
-import { GiHamburgerMenu } from 'react-icons/gi'
 import { DiJavascript1 } from 'react-icons/di'
-import { AiOutlineMail, AiOutlineGithub, AiOutlineFacebook } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineMail, AiOutlineGithub, AiOutlineFacebook } from 'react-icons/ai'
 import { useSelector, useDispatch } from 'react-redux'
 import { darkMode, lightMode } from '../reducer/theme'
 //render
@@ -37,8 +36,8 @@ function Navbar() {
                     <NavLink color={theme.color} to="/project">PROJECT</NavLink>
                     <NavLink color={theme.color} to="/note">NOTE</NavLink>
                 </NavLeft>
-                <Ham color={theme.color} onClick={() => setIsOpen(!isOpen)}>
-                    <HamButton><GiHamburgerMenu /></HamButton>
+                <Ham onClick={() => setIsOpen(!isOpen)}>
+                    <HamButton color={theme.color}><AiOutlineMenu /></HamButton>
                 </Ham>
                 <NavRight>
                     <Icons >
