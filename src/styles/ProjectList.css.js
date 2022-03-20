@@ -18,10 +18,9 @@ export const ProjectLogo = styled.div`
 export const ProjectShow = styled.div`
     display: flex;
     width: 100%;
-    margin-top: 1rem;
     padding: 2rem;
     @media screen and (max-width: 600px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 1.5rem;
     }
 `
@@ -32,15 +31,16 @@ export const Gif = styled.img`
     max-height: 600px;
     @media screen and (max-width: 600px){
         width: 100%;
+        margin-top: 10px;
     }
 `
 export const Detail = styled.div`
-    font-size: 0.8rem;
+    font-size: 1rem;
     flex: 1;
     margin-left: 20px;
     padding: 0.5rem;
     @media screen and (max-width: 600px){
         width: 100%;
-        margin-top: 0.6rem;
+        font-size: 0.8rem;
     }
 `

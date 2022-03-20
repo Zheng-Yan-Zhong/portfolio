@@ -19,8 +19,7 @@ import {
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { DiJavascript1 } from 'react-icons/di'
-import { AiOutlineMail, AiOutlineGithub, AiOutlineInstagram } from 'react-icons/ai'
-import { MdInvertColors } from 'react-icons/md'
+import { AiOutlineMail, AiOutlineGithub, AiOutlineFacebook } from 'react-icons/ai'
 import { useSelector, useDispatch } from 'react-redux'
 import { darkMode, lightMode } from '../reducer/theme'
 //render
@@ -43,9 +42,9 @@ function Navbar() {
                 </Ham>
                 <NavRight>
                     <Icons >
-                        <Anchor color={theme.color}  href=''><AiOutlineGithub /></Anchor>
-                        <Anchor color={theme.color} href=''><AiOutlineInstagram /></Anchor>
-                        <Anchor color={theme.color} href=''><AiOutlineMail /></Anchor>
+                        <Anchor color={theme.color}  href='https://github.com/Zheng-Yan-Zhong'><AiOutlineGithub /></Anchor>
+                        <Anchor color={theme.color} href='https://www.facebook.com/dennis.jonh'><AiOutlineFacebook /></Anchor>
+                        <Anchor color={theme.color} href='mailto:ococo09000@gmail.com'><AiOutlineMail /></Anchor>
                         <span style={{marginLeft: "1rem"}}>{theme.bgc === 'white' ? <MdOutlineLightMode onClick={() => dispatch(darkMode())} /> : <MdOutlineDarkMode  onClick={() => dispatch(lightMode())} />}</span>
                     </Icons>         
                 </NavRight>
@@ -64,9 +63,9 @@ function Navbar() {
                     <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/project">PROJECT</NavLink></ExtendItem> 
                     <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/note">NOTE</NavLink></ExtendItem>
                     <Icons >
-                        <Anchor color={theme.color}  href=''><AiOutlineGithub /></Anchor>
-                        <Anchor color={theme.color} href=''><AiOutlineInstagram /></Anchor>
-                        <Anchor color={theme.color} href=''><AiOutlineMail /></Anchor>
+                        <Anchor color={theme.color}  href='https://github.com/Zheng-Yan-Zhong'><AiOutlineGithub /></Anchor>
+                        <Anchor color={theme.color} href='https://www.facebook.com/dennis.jonh'><AiOutlineFacebook /></Anchor>
+                        <Anchor color={theme.color} href='mailto:ococo09000@gmail.com'><AiOutlineMail /></Anchor>
                     </Icons>         
                 </ExtendContainer>
             </NavExtend>}

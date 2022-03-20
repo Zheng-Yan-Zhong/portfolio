@@ -14,7 +14,8 @@ export const Nav = styled.nav`
     transition: 0.5s;
     box-shadow: 2px 2px 10px 5px lightgray;
     @media screen and (max-width: 750px) {
-        
+        line-height: 65px;
+        height: ${({height}) => (height ? "100vh" : "65px")};
     }
 `
 
@@ -68,7 +69,7 @@ export const Icons = styled.div`
 `
 export const Ham = styled.div`
     flex: 60%;
-    line-height: 80px;
+    line-height: 65px;
     color: ${({color}) => color};
     @media screen and (min-width: 750px){
         display: none;
@@ -86,7 +87,7 @@ export const HamButton = styled.button`
     }
 `
 export const HamLogo = styled.div`
-    line-height: 80px;
+    line-height: 65px;
     font-size: 2rem;
     color: grey;
     margin-right: 1rem;
