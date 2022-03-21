@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/Personal-App/static/css/main.900971cd.css",
-    "main.js": "/Personal-App/static/js/main.6405efe4.js",
+    "main.js": "/Personal-App/static/js/main.a9e8023a.js",
     "static/media/mern.gif": "/Personal-App/static/media/mern.49081c3cb3b7e4a71d01.gif",
     "static/media/avatar.jpeg": "/Personal-App/static/media/avatar.bddac0793fb9a8aec12f.jpeg",
     "static/media/todo.gif": "/Personal-App/static/media/todo.04a864ca6faca6888267.gif",
     "static/media/e-shop.gif": "/Personal-App/static/media/e-shop.efcda8807a9cf5192dc5.gif",
     "static/media/rhcsa.png": "/Personal-App/static/media/rhcsa.53ed1121878cf4e79550.png",
     "static/media/rhce.png": "/Personal-App/static/media/rhce.6a899cdbc9de3c30db56.png",
+    "static/media/markdown.gif": "/Personal-App/static/media/markdown.4712598d5b1b98761af1.gif",
     "index.html": "/Personal-App/index.html",
     "main.900971cd.css.map": "/Personal-App/static/css/main.900971cd.css.map",
-    "main.6405efe4.js.map": "/Personal-App/static/js/main.6405efe4.js.map"
+    "main.a9e8023a.js.map": "/Personal-App/static/js/main.a9e8023a.js.map"
   },
   "entrypoints": [
     "static/css/main.900971cd.css",
-    "static/js/main.6405efe4.js"
+    "static/js/main.a9e8023a.js"
   ]
 }
