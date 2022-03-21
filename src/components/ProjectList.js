@@ -9,6 +9,7 @@ import {
 import eShop from '../gif/e-shop.gif'
 import todo from '../gif/todo.gif'
 import mern from '../gif/mern.gif'
+import markdown from '../gif/markdown.gif'
 import { FaProjectDiagram } from 'react-icons/fa'
 function ProjectList() {
     return (
@@ -27,6 +28,23 @@ function ProjectList() {
                         <li>localStorage</li>
                     </ul>
                     <a href="https://zheng-yan-zhong.github.io/E-shop-client">Todo-App</a>
+                </Detail>
+            </ProjectShow>
+            <ProjectShow>
+                <Gif src={markdown} alt="" />
+                <Detail>
+                    <h4>Markdown</h4>
+                    <p>實做簡易Markdown編輯器<span>並且使用LocalStorage實現暫存
+                        </span>
+                    </p>
+                    
+                    <ul>
+                        <li>React.js</li>
+                        <li>react-markdown</li>
+                        <li>react-syntax-highlight</li>     
+                        <li>localStorage</li>
+                    </ul>
+                    <a href="https://zheng-yan-zhong.github.io/MarkDown-clone">Markdown</a>
                 </Detail>
             </ProjectShow>
             <ProjectShow>
