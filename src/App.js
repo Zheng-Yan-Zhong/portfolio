@@ -20,11 +20,11 @@ function App() {
             <Router>
                 <Navbar />  
                 <Routes>
-                    <Route exact path="/Personal-App/" element={<Home />} />
-                    <Route path="/Personal-App/project" element={<Project />} />
-                    <Route path="/Personal-App/note" element={<Note />} />
-                    <Route path="/Personal-App/about" element={<About />} />
-                    <Route path="/Personal-App/*" element={<NotFound />} />
+                    <Route exact path="/myportfolio/" element={<Home />} />
+                    <Route path="/myportfolio/project" element={<Project />} />
+                    <Route path="/myportfolio/note" element={<Note />} />
+                    <Route path="/myportfolio/about" element={<About />} />
+                    <Route path="/myportfolio/*" element={<NotFound />} />
                 </Routes>
                 <Footer />
             </Router>
