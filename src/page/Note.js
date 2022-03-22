@@ -51,9 +51,9 @@ function Note() {
         <Cards>
             { 
             noteList.filter((item) => {
-                if(item.title === search) {
+                if(item.title.toLowerCase() === search.toLowerCase()) {
                   return item
-                } else if(item.title.toLowerCase().includes(search)){
+                } else if(item.title.toLowerCase().includes(search.toLowerCase())){
                   return item
                 } 
               }).map((item, key) => {

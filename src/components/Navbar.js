@@ -31,8 +31,8 @@ function Navbar() {
         <Nav height={isOpen} color={theme.color} bgc={theme.bgc}>
             <NavbarWrap>
                 <NavLeft>
-                    <NavLink color={theme.color} to="/Personal-App/">HOME</NavLink>
-                    <NavLink color={theme.color} to="/Personal-App/about">ABOUT</NavLink>                    
+                    <NavLink color={theme.color} to="/myportfolio/">HOME</NavLink>
+                    <NavLink color={theme.color} to="/myportfolio/about">ABOUT</NavLink>                    
                     {/*<NavLink color={theme.color} to="/Personal-App/project">PROJECT</NavLink>
                     <NavLink color={theme.color} to="//Personal-App/note">NOTE</NavLink>*/}
                 </NavLeft>
@@ -48,7 +48,7 @@ function Navbar() {
                     </Icons>         
                 </NavRight>
                 <HamLogo>
-                    <NavLink color={theme.color} to="/"><DiJavascript1 /></NavLink>
+                    <NavLink color={theme.color} to="/myportfolio/"><DiJavascript1 /></NavLink>
                 </HamLogo>
             </NavbarWrap>
             {isOpen && <NavExtend>
@@ -57,11 +57,11 @@ function Navbar() {
                         <div>{theme.bgc === 'white' ? <MdOutlineLightMode onClick={() => dispatch(darkMode())} /> : <MdOutlineDarkMode  onClick={() => dispatch(lightMode())} />}</div>                  
                         
                     </Toggle>
-                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/">HOME</NavLink></ExtendItem>
-                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/about">ABOUT</NavLink></ExtendItem>                   
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/myportfolio/">HOME</NavLink></ExtendItem>
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/myportfolio/about">ABOUT</NavLink></ExtendItem>                   
                     
-                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/project">PROJECT</NavLink></ExtendItem> 
-                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/note">NOTE</NavLink></ExtendItem> 
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/myportfolio/project">PROJECT</NavLink></ExtendItem> 
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/myportfolio/note">NOTE</NavLink></ExtendItem> 
                     <Icons >
                         <Anchor color={theme.color}  href='https://github.com/Zheng-Yan-Zhong'><AiOutlineGithub /></Anchor>
                         <Anchor color={theme.color} href='https://www.facebook.com/dennis.jonh'><AiOutlineFacebook /></Anchor>
