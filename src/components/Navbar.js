@@ -60,8 +60,8 @@ function Navbar() {
                     <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/">HOME</NavLink></ExtendItem>
                     <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/about">ABOUT</NavLink></ExtendItem>                   
                     
-                    {/*<ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/project">PROJECT</NavLink></ExtendItem> 
-                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/note">NOTE</NavLink></ExtendItem> */}
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/project">PROJECT</NavLink></ExtendItem> 
+                    <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/Personal-App/note">NOTE</NavLink></ExtendItem> 
                     <Icons >
                         <Anchor color={theme.color}  href='https://github.com/Zheng-Yan-Zhong'><AiOutlineGithub /></Anchor>
                         <Anchor color={theme.color} href='https://www.facebook.com/dennis.jonh'><AiOutlineFacebook /></Anchor>
