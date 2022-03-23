@@ -27,7 +27,7 @@ function ProjectList() {
                         <li>React.js</li>     
                         <li>localStorage</li>
                     </ul>
-                    <a href="https://zheng-yan-zhong.github.io/E-shop-client">Todo-App</a>
+                    <a href="https://zheng-yan-zhong.github.io/E-shop-client">Todo-app</a>
                 </Detail>
             </ProjectShow>
             <ProjectShow>
@@ -81,7 +81,7 @@ function ProjectList() {
                         <li>bcrypt</li>
                         <li>jsonwebtoken</li>
                     </ul>
-                    <a href="https://zheng-yan-zhong.github.io/E-shop-client">E-shop demo</a>
+                    <a href="https://zheng-yan-zhong.github.io/e-shop-client">e-shop demo</a>
                 </Detail>
             </ProjectShow>
         </Container>
