@@ -8,8 +8,7 @@ export const Container = styled.div`
     }
 `
 export const Bar = styled.div`
-    display: flex;
-    justify-content: space-around;
+    
 `
 export const Wrapper = styled.div`
     display: flex;
@@ -69,47 +68,23 @@ export const Icon = styled.div`
     }
 `
 
-
-
 export const Menu = styled.ul`
     flex: 1 0 200px;
     margin-top: 10px;
     padding: 0.5rem;
     color: grey;
     font-weight: 600;
+    user-select: none;
 `
-export const DropDown = styled.div`
-    display: none;
-    width: 160px;
-    z-index: 1;
-    padding: 0.5rem;
-    transition-duration: 0.5s;
-    > a {
-        display: block;
-        margin-top: 5px;
-        color: gray;
-        font-size: 0.8rem;
-        transition-duration: 0.3s;
-        padding: 5px;
-        text-decoration: none;
-        &:hover {
-            color: lightgray;
-        }
-    }
 
-`
+
 export const List = styled.li`
     list-style: none;
     cursor: pointer;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     position: relative;
     transition-duration: 0.5s;
-
-    &:hover ${DropDown}{
-        display: block;
-        transition-duration: 0.5s;
-    }
 `
 
 

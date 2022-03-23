@@ -14,6 +14,8 @@ import Project from './page/Project'
 import About from './page/About'
 import Note from './page/Note'
 import NotFound from './page/NotFound'
+import Variables from './components/Variables'
+import JavaScript from './components/JavaScript'
 function App() {
     return (
         <Container>

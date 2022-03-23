@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     color: ${({color}) => color};
     transition: 0.5s;
     box-shadow: 2px 2px 10px 5px lightgray;
+    z-index: 999;
     @media screen and (max-width: 750px) {
         line-height: 65px;
         height: ${({height}) => (height ? "100vh" : "65px")};

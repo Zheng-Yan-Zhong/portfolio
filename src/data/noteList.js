@@ -2,7 +2,7 @@ const noteList = [
     {
         id:1,
         title: 'React',
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, cumque, ipsam vero numquam atque fugiat autem velit porro consectetur necessitatibus ab quos, voluptatibus corrupti earum quis ut eos quas. Hic." ,
+        content: " ipsum dolor sit amet, consectetur adipisicing elit. Nisi, cumque, ipsam vero numquam atque fugiat autem velit porro consectetur necessitatibus ab quos, voluptatibus corrupti earum quis ut eos quas. Hic." ,
         link: 'https://google.com'
     },
     {
