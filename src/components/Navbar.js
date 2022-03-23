@@ -42,7 +42,6 @@ function Navbar() {
                 <NavRight>
                     <Icons >
                         <Anchor color={theme.color}  href='https://github.com/Zheng-Yan-Zhong'><AiOutlineGithub /></Anchor>
-                        <Anchor color={theme.color} href='https://www.facebook.com/dennis.jonh'><AiOutlineFacebook /></Anchor>
                         <Anchor color={theme.color} href='mailto:ococo09000@gmail.com'><AiOutlineMail /></Anchor>
                         <span style={{marginLeft: "1rem"}}>{theme.bgc === 'white' ? <MdOutlineLightMode onClick={() => dispatch(darkMode())} /> : <MdOutlineDarkMode  onClick={() => dispatch(lightMode())} />}</span>
                     </Icons>         
@@ -64,7 +63,6 @@ function Navbar() {
                     <ExtendItem onClick={() => setIsOpen(!isOpen)}><NavLink color={theme.color} to="/myportfolio/note">NOTE</NavLink></ExtendItem> */}
                     <Icons >
                         <Anchor color={theme.color}  href='https://github.com/Zheng-Yan-Zhong'><AiOutlineGithub /></Anchor>
-                        <Anchor color={theme.color} href='https://www.facebook.com/dennis.jonh'><AiOutlineFacebook /></Anchor>
                         <Anchor color={theme.color} href='mailto:ococo09000@gmail.com'><AiOutlineMail /></Anchor>
                     </Icons>         
                 </ExtendContainer>
