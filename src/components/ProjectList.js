@@ -47,7 +47,7 @@ function ProjectList() {
             <li>react-syntax-highlight</li>
             <li>localStorage</li>
           </ul>
-          <a href="https://zheng-yan-zhong.github.io/MarkDown-clone">
+          <a href="https://zheng-yan-zhong.github.io/react-markdown">
             Markdown
           </a>
         </Detail>
